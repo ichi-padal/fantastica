@@ -81,10 +81,10 @@
     -o-transition: -o-transform 0.4s;
     transition: transform 0.4s;
 }
-.nav ul ul {
-	-webkit-transition: background 0.5s ease;  /*плавное появление*/
-    -moz-transition: background 0.5s ease;
-    -o-transition: background 0.5s ease;
+.nav ul li ul {
+	-webkit-transition: opacity 0.5s ease;  /*плавное появление*/
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
 	border-radius: 10px;
 	list-style:none;
 	position:absolute;
@@ -92,7 +92,7 @@
     display: none;
 	/*left:-9999px;  Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
     opacity:0; /* Устанавливаем начальное состояние прозрачности */
-    -webkit-transition:0.5s ease opacity;	/* В Webkit выпадающие пункты будут проявляться */
+    -webkit-transition:0.5s opacity ease;	/* В Webkit выпадающие пункты будут проявляться */
 }
 .nav ul ul li{
 	padding: 8px 14px 8px  8px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
